@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.eventHead {
+    height: 400px;
+    background-image: url('images/head.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a, .navbar img {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover, footer a:hover, h3:hover, img:hover, i:hover {
+    color: #ff1493;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    min-width: 120px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 10px;
+}
+
+.dropdown-content li a {
+    color: black;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.eventBody {
+    background-color: #ebedef;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.imgDiv {
+    background: white;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.imgDiv:hover {
+    transform: scale(1.05);
+}
+
+.imgDiv img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
